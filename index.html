@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Codeforces Scoreboard</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="main.js"></script>
+	<script type="text/javascript" src="sha512.js"></script>
+</head>
+<body class="p-3">
+	<div class="container">
+		<div class="row">
+			<div class="col">
+				<input type="text" id="link" class="form-control" name="contestLink" placeholder="Enter Contest Link  or  Contest Id">
+			</div>
+			<div class="col">
+				<button class="btn btn-secondary" id="fetch">Fetch</button>
+			</div>
+		</div>
+	</div>
+	<div id="text" class="m-5">
+		<h2 class="text-center">Enter codeforces contest link or Id to see the Scoreboard</h2>
+	</div>
+	<div class="container-fluid" id="table" style="display: none;">
+		<h2 id="contestName" class="text-center py-5"></h2>
+		<table class="table">
+			<thead>
+				<tr id="problems">
+				</tr>
+			</thead>
+			<tbody id="contestant">
+
+			</tbody>
+		</table>
+	</div>
+</body>
+</html>
