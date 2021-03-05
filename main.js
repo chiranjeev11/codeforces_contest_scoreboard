@@ -42,7 +42,7 @@ $(document).ready(function(){
 					problems(data);
 				},
 				error: function(e){
-					console.log(e.responseText);
+					notify('You Entered Wrong Contest Id', 'danger')
 					$('#table').css('display','none');
 					$('#text').css('display', 'block');
 					$('#contestant').empty();
@@ -51,7 +51,7 @@ $(document).ready(function(){
 			})
 		}
 		else{
-			console.log('enter correct link of contest')
+			notify('Please Enter correct link', 'info')
 			$('#contestant').empty();
 			$('#problems').empty();
 		}
@@ -128,6 +128,13 @@ $(document).ready(function(){
 
 		
 	}
+	function notify(message, mode){
+		alert = `<div class="alert alert-${mode}" role="alert">
+				  ${message}
+				  <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+				    <span aria-hidden="true">&times;</span>
+				  </button>
+				</div>`
+		$('#form').prepend(alert)
+	}
 })
-// 3dcc8456b0be4eb77bbe0a45aeda8fd841015ec5
-// 063a63a5b216498e59bec3a01cd60c2f0c2f7053
