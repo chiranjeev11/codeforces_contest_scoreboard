@@ -1,7 +1,7 @@
 $(document).ready(function(){
 	let link;
-	let apiKey = "3dcc8456b0be4eb77bbe0a45aeda8fd841015ec5";
-	let secretKey = "063a63a5b216498e59bec3a01cd60c2f0c2f7053";
+	let apiKey = "Your API Key";
+	let secretKey = "Your Secret Key";
 	let contestId;
 	let status;
 
